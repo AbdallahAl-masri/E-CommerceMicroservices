@@ -21,3 +21,4 @@ C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Domain\obj\Debug\net8.0\Order
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Domain\obj\Debug\net8.0\refint\Order.Domain.dll
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Domain\obj\Debug\net8.0\Order.Domain.pdb
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Domain\obj\Debug\net8.0\ref\Order.Domain.dll
+C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Domain\obj\Debug\net8.0\Order.Domain.sourcelink.json

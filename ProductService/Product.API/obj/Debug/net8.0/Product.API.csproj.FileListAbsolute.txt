@@ -322,10 +322,10 @@ C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\stat
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Product.API.props
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Product.API.props
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\Product..3613E4EC.Up2Date
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\Product.API.dll
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\refint\Product.API.dll
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\Product.API.pdb
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\Product.API.genruntimeconfig.cache
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\ref\Product.API.dll
+C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.API\obj\Debug\net8.0\Product.API.sourcelink.json

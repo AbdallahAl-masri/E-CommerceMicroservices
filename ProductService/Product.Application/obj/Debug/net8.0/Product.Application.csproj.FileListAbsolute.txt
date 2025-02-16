@@ -33,3 +33,4 @@ C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.Application\obj\Debug\net
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.Application\obj\Debug\net8.0\refint\Product.Application.dll
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.Application\obj\Debug\net8.0\Product.Application.pdb
 C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.Application\obj\Debug\net8.0\ref\Product.Application.dll
+C:\Users\NTC\Desktop\E-Commerce\ProductService\Product.Application\obj\Debug\net8.0\Product.Application.sourcelink.json

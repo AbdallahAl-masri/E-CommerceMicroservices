@@ -262,7 +262,7 @@ C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Deb
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Authentication.API.props
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Authentication.API.props
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\Authenti.42C78034.Up2Date
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\Authentication.API.genruntimeconfig.cache
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\ref\Authentication.API.dll
+C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\Authentication.API.sourcelink.json

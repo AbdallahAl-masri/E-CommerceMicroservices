@@ -37,3 +37,4 @@ C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Infrastructure\obj\Debug\net8
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Infrastructure\obj\Debug\net8.0\refint\Order.Infrastructure.dll
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.pdb
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Infrastructure\obj\Debug\net8.0\ref\Order.Infrastructure.dll
+C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.Infrastructure\obj\Debug\net8.0\Order.Infrastructure.sourcelink.json

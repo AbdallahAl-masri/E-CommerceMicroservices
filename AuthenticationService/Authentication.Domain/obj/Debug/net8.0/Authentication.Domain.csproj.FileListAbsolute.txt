@@ -21,3 +21,4 @@ C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Domain\obj\
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Domain\obj\Debug\net8.0\refint\Authentication.Domain.dll
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Domain\obj\Debug\net8.0\Authentication.Domain.pdb
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Domain\obj\Debug\net8.0\ref\Authentication.Domain.dll
+C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Domain\obj\Debug\net8.0\Authentication.Domain.sourcelink.json

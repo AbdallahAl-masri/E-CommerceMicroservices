@@ -37,3 +37,4 @@ C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Infrastruct
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Infrastructure\bin\Debug\net8.0\SharedLibrary.pdb
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Infrastructure\obj\Debug\net8.0\Authenti.9F3EE465.Up2Date
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Infrastructure\obj\Debug\net8.0\ref\Authentication.Infrastructure.dll
+C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.Infrastructure\obj\Debug\net8.0\Authentication.Infrastructure.sourcelink.json

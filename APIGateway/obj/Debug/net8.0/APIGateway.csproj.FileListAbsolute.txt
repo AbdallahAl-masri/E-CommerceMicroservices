@@ -102,10 +102,10 @@ C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\staticwebassets\msbu
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.APIGateway.props
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.APIGateway.props
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\APIGateway.csproj.Up2Date
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\APIGateway.dll
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\refint\APIGateway.dll
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\APIGateway.pdb
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\APIGateway.genruntimeconfig.cache
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\ref\APIGateway.dll
+C:\Users\NTC\Desktop\E-Commerce\apigateway\obj\Debug\net8.0\APIGateway.sourcelink.json
