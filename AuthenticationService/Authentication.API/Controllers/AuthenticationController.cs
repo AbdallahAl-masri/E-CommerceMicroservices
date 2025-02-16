@@ -3,6 +3,8 @@ using Authentication.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 
 namespace Authentication.API.Controllers
 {
@@ -37,13 +39,14 @@ namespace Authentication.API.Controllers
             return result.Status ? Ok(result) : BadRequest(result);
         }
 
-        [HttpGet("{Id}")]
+        [HttpGet]
         [Authorize]
-        public async Task<IActionResult> GetUserAsync(Guid Id)
+        public async Task<IActionResult> GetUserAsync()
         {
-            if (Id == Guid.Empty)
+            var userId = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (userId.IsNullOrEmpty())
                 return BadRequest("Invalid user Id");
-            var user = await userInterface.GetUserAsync(Id);
+            var user = await userInterface.GetUserAsync(Guid.Parse(userId!));
             return user != null ? Ok(user) : NotFound();
         }
     }

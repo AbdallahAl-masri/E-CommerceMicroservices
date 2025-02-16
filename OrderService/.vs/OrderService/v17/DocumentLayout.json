@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\dependencyinjection\\servicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\dependencyinjection\\servicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|solutionrelative:order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|solutionrelative:order.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServiceContainer.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DependencyInjection\\ServiceContainer.cs",
+              "RelativeDocumentMoniker": "Order.Application\\DependencyInjection\\ServiceContainer.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DependencyInjection\\ServiceContainer.cs",
+              "RelativeToolTip": "Order.Application\\DependencyInjection\\ServiceContainer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T15:35:12.697Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -42,7 +63,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Program.cs",
+              "RelativeDocumentMoniker": "Order.API\\Program.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Program.cs",
+              "RelativeToolTip": "Order.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T15:34:11.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Order.API\\Controllers\\OrderController.cs",

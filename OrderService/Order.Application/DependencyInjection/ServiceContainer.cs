@@ -17,14 +17,14 @@ namespace Order.Application.DependencyInjection
             services.AddHttpClient<IOrderService, OrderService>(o =>
             {
                 o.BaseAddress = new Uri(configuration["ApiGateway:BaseAddress"]!);
-                o.Timeout = TimeSpan.FromSeconds(1);
+                o.Timeout = TimeSpan.FromSeconds(10);
             });
 
             // Create retry strategy
             var retryStrategy = new RetryStrategyOptions()
             {
                 ShouldHandle = new PredicateBuilder().Handle<TaskCanceledException>(),
-                BackoffType = DelayBackoffType.Constant,
+                BackoffType = DelayBackoffType.Exponential,
                 UseJitter = true,
                 MaxRetryAttempts = 3,
                 Delay = TimeSpan.FromMilliseconds(500),

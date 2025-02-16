@@ -67,21 +67,10 @@
         }
       }
     },
-    "/api/Authentication/{Id}": {
+    "/api/Authentication": {
       "get": {
         "tags": [
           "Authentication"
-        ],
-        "parameters": [
-          {
-            "name": "Id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          }
         ],
         "responses": {
           "200": {

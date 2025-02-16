@@ -109,3 +109,4 @@ C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\APIGateway.pdb
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\APIGateway.genruntimeconfig.cache
 C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\ref\APIGateway.dll
 C:\Users\NTC\Desktop\E-Commerce\apigateway\obj\Debug\net8.0\APIGateway.sourcelink.json
+C:\Users\NTC\Desktop\E-Commerce\APIGateway\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -25,7 +25,6 @@ namespace Authentication.Infrastructure.Repositories
             var user = await context.Users.FindAsync(userId);
             return user is not null ? new GetUserDTO
             {
-                UserId = user.UserId,
                 Name = user.UserName,
                 Email = user.Email,
                 Address = user.Address,
@@ -82,7 +81,8 @@ namespace Authentication.Infrastructure.Repositories
             var claims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, user.UserName!.ToString()),
-                new Claim(ClaimTypes.Email, user.Email!)
+                new Claim(ClaimTypes.Email, user.Email!),
+                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString())
             };
 
             if(!string.IsNullOrEmpty(user.Role) || !Equals("string", user.Role))

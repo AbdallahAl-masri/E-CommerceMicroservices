@@ -2,17 +2,11 @@
   {
     "ContainingType": "Authentication.API.Controllers.AuthenticationController",
     "Method": "GetUserAsync",
-    "RelativePath": "api/Authentication/{Id}",
+    "RelativePath": "api/Authentication",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C758201C-AD74-CAA7-FE6D-47CF75E4C237}|Authentication.Infrastructure\\Authentication.Infrastructure.csproj|c:\\users\\ntc\\desktop\\e-commerce\\authenticationservice\\authentication.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C758201C-AD74-CAA7-FE6D-47CF75E4C237}|Authentication.Infrastructure\\Authentication.Infrastructure.csproj|solutionrelative:authentication.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2294A428-7CBD-3302-9EF8-910476A6741E}|Authentication.Application\\Authentication.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\authenticationservice\\authentication.application\\dtos\\getuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2294A428-7CBD-3302-9EF8-910476A6741E}|Authentication.Application\\Authentication.Application.csproj|solutionrelative:authentication.application\\dtos\\getuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\authenticationservice\\authentication.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|solutionrelative:authentication.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\authenticationservice\\authentication.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|solutionrelative:authentication.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\authenticationservice\\authentication.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|solutionrelative:authentication.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\authenticationservice\\authentication.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|solutionrelative:authentication.api\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C191C96E-C63A-4DA8-9940-9765FE5287E4}|Authentication.API\\Authentication.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\authenticationservice\\authentication.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -26,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetUserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\Authentication.Application\\DTOs\\GetUserDTO.cs",
+              "RelativeDocumentMoniker": "Authentication.Application\\DTOs\\GetUserDTO.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\Authentication.Application\\DTOs\\GetUserDTO.cs",
+              "RelativeToolTip": "Authentication.Application\\DTOs\\GetUserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T17:54:24.518Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -55,6 +76,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\Authentication.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Authentication.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\Authentication.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Authentication.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T17:19:30.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\Authentication.API\\appsettings.json",
               "RelativeDocumentMoniker": "Authentication.API\\appsettings.json",
@@ -67,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\Authentication.API\\Program.cs",
               "RelativeDocumentMoniker": "Authentication.API\\Program.cs",
@@ -75,12 +109,11 @@
               "RelativeToolTip": "Authentication.API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T13:29:46.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T13:29:46.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\Authentication.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Authentication.API\\Properties\\launchSettings.json",
@@ -88,8 +121,7 @@
               "RelativeToolTip": "Authentication.API\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-16T13:28:34.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-16T13:28:34.969Z"
             },
             {
               "$type": "Document",
@@ -99,7 +131,7 @@
               "RelativeDocumentMoniker": "Authentication.API\\Controllers\\AuthenticationController.cs",
               "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\AuthenticationService\\Authentication.API\\Controllers\\AuthenticationController.cs",
               "RelativeToolTip": "Authentication.API\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAD4vzAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T13:23:32.402Z",
               "EditorCaption": ""

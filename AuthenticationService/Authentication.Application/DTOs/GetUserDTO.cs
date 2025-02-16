@@ -9,7 +9,6 @@ namespace Authentication.Application.DTOs
 {
     public class GetUserDTO
     {
-        public Guid UserId { get; set; } = Guid.NewGuid();
 
         [Required]
         public string? Name { get; set; }

@@ -266,3 +266,4 @@ C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Deb
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\Authentication.API.genruntimeconfig.cache
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\ref\Authentication.API.dll
 C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\Authentication.API.sourcelink.json
+C:\Users\NTC\Desktop\E-Commerce\AuthenticationService\Authentication.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

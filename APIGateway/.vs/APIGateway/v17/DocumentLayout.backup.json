@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\NTC\\Desktop\\E-Commerce\\APIGateway\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{8648CA76-A8E1-47C0-B4B3-99C3A99AAEC4}|APIGateway.csproj|c:\\users\\ntc\\desktop\\e-commerce\\apigateway\\middleware\\attachsignaturetorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8648CA76-A8E1-47C0-B4B3-99C3A99AAEC4}|APIGateway.csproj|solutionrelative:middleware\\attachsignaturetorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AttachSignatureToRequest.cs",
-              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\APIGateway\\Middleware\\AttachSignatureToRequest.cs",
-              "RelativeDocumentMoniker": "Middleware\\AttachSignatureToRequest.cs",
-              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\APIGateway\\Middleware\\AttachSignatureToRequest.cs",
-              "RelativeToolTip": "Middleware\\AttachSignatureToRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T13:23:45.049Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
