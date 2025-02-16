@@ -2,37 +2,42 @@
 E-Commerce Microservices
 
 ## Overview
-This project is a .NET 8 application that includes various services and middleware components. It is designed to handle authentication, product management, order management, and API gateway functionalities.
-
-## Projects
-- **APIGateway**: Manages routing and request forwarding using Ocelot.
-- **Authentication.API**: Handles user authentication and authorization.
-- **Product.API**: Manages product-related operations.
-- **Order.API**: Manages order-related operations.
+This repository contains an e-commerce system built using .NET 8 with a microservices architecture. The system includes several services such as Authentication, Product, and Order services. It features secure communication using JWT authentication, API Gateway (Ocelot), and middleware enhancements for request validation and exception handling. The database is managed with Entity Framework Core, and the system is designed with RESTful APIs.
 
 ## Features
-- **Global Exception Handling**: Middleware to handle exceptions and provide meaningful error messages.
-- **JWT Authentication**: Secure authentication using JSON Web Tokens.
-- **Product Management**: API endpoints to manage products, including CRUD operations.
-- **Order Management**: API endpoints to manage orders, including CRUD operations.
-- **API Gateway**: Routes and forwards requests to appropriate services.
+- **Microservices Architecture**: Modular services for Authentication, Product, and Order management.
+- **Secure Communication**: JWT authentication for secure service-to-service communication.
+- **API Gateway**: Ocelot API Gateway for routing and aggregation.
+- **Middleware Enhancements**: Improved request validation and exception handling.
+- **Database Management**: Entity Framework Core for managing database operations.
+- **RESTful APIs**: Designed using REST principles for scalability and ease of use.
 
+## Services
+1. **Authentication Service**:
+    Manages user authentication and authorization.
+    Uses JWT for secure communication.
+2. **Product Service**:
+    Handles product-related operations such as adding, updating, and retrieving products.
+3. **Order Service**:
+    Manages order processing and tracking.
+
+## Technologies
+- **.NET 8**: Backend framework.
+- **C#**: Programming language.
+- **Entity Framework Core**: ORM for database management.
+- **Ocelot**: API Gateway for managing API requests.
+- **JWT**: JSON Web Tokens for secure authentication.
+    
 ## Installation
 1. Clone the repository:
-    git clone https://github.com/your-repo/project-name.git
-2. Navigate to the project directory:
-    cd project-name
-3. Restore the dependencies:
-    dotnet restore
-
-## Usage
-1. Build the project:
-    dotnet build
-2. Run the project:
-    dotnet run --project APIGateway
-    dotnet run --project Authentication.API
-    dotnet run --project Product.API
-    dotnet run --project Order.API
+        git clone https://github.com/AbdallahAl-masri/E-CommerceMicroservices.git
+        cd E-CommerceMicroservices
+2. Restore dependencies:
+       dotnet restore
+3. Update the database:
+       dotnet ef database update
+4. Run the services:
+        dotnet run
 
 ## API Endpoints
 ### Product API
