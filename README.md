@@ -12,6 +12,18 @@ This repository contains an e-commerce system built using .NET 8 with a microser
 - **Database Management**: Entity Framework Core for managing database operations.
 - **RESTful APIs**: Designed using REST principles for scalability and ease of use.
 
+  ## 📜 API Documentation
+
+### 🔹 Swagger
+Each microservice has a Swagger UI:
+- **Authentication**: [http://localhost:5000/swagger](http://localhost:5000/swagger)
+- **Products**: [http://localhost:5001/swagger](http://localhost:5001/swagger)
+- **Orders**: [http://localhost:5002/swagger](http://localhost:5002/swagger)
+
+### 🔹 Postman Collection
+Import the Postman collection to test APIs:  
+[Download Postman Collection](./ecommerce-api.postman_collection.json)
+
 ## Services
 1. **Authentication Service**:
     Manages user authentication and authorization.
