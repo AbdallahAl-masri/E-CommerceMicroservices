@@ -49,7 +49,12 @@ namespace Order.API.Controllers
         {
             if (orderId <= 0)
                 return BadRequest("Invalid order id");
-            var orderDetails = await orderService.GetOrderDetailsAsync(orderId);
+
+            var token = Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            if (string.IsNullOrEmpty(token))
+                return Unauthorized("Token is required");
+
+            var orderDetails = await orderService.GetOrderDetailsAsync(orderId, token);
             return orderDetails != null ? Ok(orderDetails) : NotFound("Order not found");
         }
 

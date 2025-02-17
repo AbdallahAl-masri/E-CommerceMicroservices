@@ -2,6 +2,7 @@
 using Order.Application.DTOs.Conversions;
 using Order.Application.Interfaces;
 using Polly.Registry;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 
 namespace Order.Application.Services
@@ -23,10 +24,13 @@ namespace Order.Application.Services
         }
 
         // Get User
-        public async Task<UserDTO> GetUserAsync(Guid userId)
+        public async Task<UserDTO> GetUserAsync(Guid userId, string token)
         {
+            // Set the Authorization header with Bearer Token
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
             // Call user API using HttpClient
-            var getUser = await httpClient.GetAsync($"api/authentication/{userId}");
+            var getUser = await httpClient.GetAsync($"api/authentication");
             if (!getUser.IsSuccessStatusCode)
                 return null!;
             var user = await getUser.Content.ReadFromJsonAsync<UserDTO>();
@@ -34,7 +38,7 @@ namespace Order.Application.Services
         }
 
         // Get Order Details by Id
-        public async Task<OrderDetailsDTO> GetOrderDetailsAsync(int orderId)
+        public async Task<OrderDetailsDTO> GetOrderDetailsAsync(int orderId, string JWTToken)
         {
             // prepare order
             var order = await orderInterface.GetByIdAsync(orderId);
@@ -48,7 +52,7 @@ namespace Order.Application.Services
             var productDTO = await retryPipeline.ExecuteAsync(async token => await GetProductAsync(order.ProductId));
 
             // prepare user
-            var userDTO = await retryPipeline.ExecuteAsync(async token => await GetUserAsync(order.UserId));
+            var userDTO = await retryPipeline.ExecuteAsync(async token => await GetUserAsync(order.UserId, JWTToken));
 
             // populate order details
             var orderDetails = new OrderDetailsDTO

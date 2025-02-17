@@ -343,3 +343,4 @@ C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.API\obj\Debug\net8.0\Order.AP
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.API\obj\Debug\net8.0\Order.API.genruntimeconfig.cache
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.API\obj\Debug\net8.0\ref\Order.API.dll
 C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.API\obj\Debug\net8.0\Order.API.sourcelink.json
+C:\Users\NTC\Desktop\E-Commerce\OrderService\Order.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
