@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|solutionrelative:order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB315926-E0B6-4BDB-AFE6-F7684854E1FC}|Order.Infrastructure\\Order.Infrastructure.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.infrastructure\\dependencyinjection\\swaggerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB315926-E0B6-4BDB-AFE6-F7684854E1FC}|Order.Infrastructure\\Order.Infrastructure.csproj|solutionrelative:order.infrastructure\\dependencyinjection\\swaggerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|solutionrelative:order.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +19,40 @@
       "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\services\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE1BCB09-24CA-D326-7165-40629B7900EA}|Order.API\\Order.API.csproj|solutionrelative:order.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\dtos\\conversions\\orderconversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\dtos\\conversions\\orderconversion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\dependencyinjection\\servicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\dependencyinjection\\servicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB315926-E0B6-4BDB-AFE6-F7684854E1FC}|Order.Infrastructure\\Order.Infrastructure.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB315926-E0B6-4BDB-AFE6-F7684854E1FC}|Order.Infrastructure\\Order.Infrastructure.csproj|solutionrelative:order.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\dtos\\orderdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\dtos\\orderdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E0724C-BF93-4415-5F64-1184658C8B61}|Order.Domain\\Order.Domain.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.domain\\entites\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E0724C-BF93-4415-5F64-1184658C8B61}|Order.Domain\\Order.Domain.csproj|solutionrelative:order.domain\\entites\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E0724C-BF93-4415-5F64-1184658C8B61}|Order.Domain\\Order.Domain.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.domain\\entites\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E0724C-BF93-4415-5F64-1184658C8B61}|Order.Domain\\Order.Domain.csproj|solutionrelative:order.domain\\entites\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\orderservice\\order.application\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC9C635F-DC7C-8357-0D50-AEC27D09AB2E}|Order.Application\\Order.Application.csproj|solutionrelative:order.application\\dtos\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +62,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\Services\\IOrderService.cs",
-              "RelativeDocumentMoniker": "Order.Application\\Services\\IOrderService.cs",
-              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\Services\\IOrderService.cs",
-              "RelativeToolTip": "Order.Application\\Services\\IOrderService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "SwaggerConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Infrastructure\\DependencyInjection\\SwaggerConfiguration.cs",
+              "RelativeDocumentMoniker": "Order.Infrastructure\\DependencyInjection\\SwaggerConfiguration.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Infrastructure\\DependencyInjection\\SwaggerConfiguration.cs",
+              "RelativeToolTip": "Order.Infrastructure\\DependencyInjection\\SwaggerConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T17:30:13.483Z",
+              "WhenOpened": "2025-02-22T17:53:42.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Program.cs",
+              "RelativeDocumentMoniker": "Order.API\\Program.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Program.cs",
+              "RelativeToolTip": "Order.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:41:29.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Order.Application\\DTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "Order.Application\\DTOs\\UserDTO.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T11:23:31.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\OrderDetailsDTO.cs",
+              "RelativeDocumentMoniker": "Order.Application\\DTOs\\OrderDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\OrderDetailsDTO.cs",
+              "RelativeToolTip": "Order.Application\\DTOs\\OrderDetailsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T11:20:41.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "Order.Application\\DTOs\\ProductDTO.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\ProductDTO.cs",
+              "RelativeToolTip": "Order.Application\\DTOs\\ProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T11:21:49.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Order.Application\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\Services\\OrderService.cs",
+              "RelativeToolTip": "Order.Application\\Services\\OrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T11:19:18.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Domain\\Entites\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Order.Domain\\Entites\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Domain\\Entites\\OrderItem.cs",
+              "RelativeToolTip": "Order.Domain\\Entites\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T11:12:55.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OrderItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\OrderItemDTO.cs",
+              "RelativeDocumentMoniker": "Order.Application\\DTOs\\OrderItemDTO.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\OrderItemDTO.cs",
+              "RelativeToolTip": "Order.Application\\DTOs\\OrderItemDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T11:11:48.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Orders.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Domain\\Entites\\Orders.cs",
+              "RelativeDocumentMoniker": "Order.Domain\\Entites\\Orders.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Domain\\Entites\\Orders.cs",
+              "RelativeToolTip": "Order.Domain\\Entites\\Orders.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T11:10:48.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderConversion.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\Conversions\\OrderConversion.cs",
+              "RelativeDocumentMoniker": "Order.Application\\DTOs\\Conversions\\OrderConversion.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\Conversions\\OrderConversion.cs",
+              "RelativeToolTip": "Order.Application\\DTOs\\Conversions\\OrderConversion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T11:03:31.259Z",
               "EditorCaption": ""
             },
             {
@@ -71,53 +220,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "Order.Application\\Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\Services\\OrderService.cs",
-              "RelativeToolTip": "Order.Application\\Services\\OrderService.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwAoAAABOAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "OrderDTO.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\OrderDTO.cs",
+              "RelativeDocumentMoniker": "Order.Application\\DTOs\\OrderDTO.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DTOs\\OrderDTO.cs",
+              "RelativeToolTip": "Order.Application\\DTOs\\OrderDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T17:30:22.842Z",
+              "WhenOpened": "2025-02-22T11:10:26.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceContainer.cs",
-              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DependencyInjection\\ServiceContainer.cs",
-              "RelativeDocumentMoniker": "Order.Application\\DependencyInjection\\ServiceContainer.cs",
-              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Application\\DependencyInjection\\ServiceContainer.cs",
-              "RelativeToolTip": "Order.Application\\DependencyInjection\\ServiceContainer.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Infrastructure\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "Order.Infrastructure\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.Infrastructure\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "Order.Infrastructure\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAIwB0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T15:35:12.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Program.cs",
-              "RelativeDocumentMoniker": "Order.API\\Program.cs",
-              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Program.cs",
-              "RelativeToolTip": "Order.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T15:34:11.463Z",
+              "WhenOpened": "2025-02-22T10:59:47.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "OrderController.cs",
               "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "Order.API\\Controllers\\OrderController.cs",
               "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\OrderService\\Order.API\\Controllers\\OrderController.cs",
               "RelativeToolTip": "Order.API\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwDcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T13:36:53.637Z",
+              "WhenOpened": "2025-02-22T10:59:25.337Z",
               "EditorCaption": ""
             }
           ]

@@ -5,6 +5,7 @@ using Order.Application.DTOs.Conversions;
 using Order.Application.Interfaces;
 using Order.Application.Services;
 using SharedLibrary.Responses;
+using System.Security.Claims;
 
 namespace Order.API.Controllers
 {
@@ -15,6 +16,8 @@ namespace Order.API.Controllers
     {
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<IEnumerable<OrderDTO>>> GetOrders()
         {
             var orders = await orderInterface.GetAllAsync();
@@ -26,6 +29,8 @@ namespace Order.API.Controllers
         }
 
         [HttpGet("{id:int}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<OrderDTO>> GetOrder(int id)
         {
             var order = await orderInterface.GetByIdAsync(id);
@@ -36,6 +41,9 @@ namespace Order.API.Controllers
         }
 
         [HttpGet("client/{clientId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<OrderDTO>> GetClientOrders(Guid clientId)
         {
             if (clientId == Guid.Empty)
@@ -45,6 +53,9 @@ namespace Order.API.Controllers
         }
 
         [HttpGet("details/{orderId}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<OrderDetailsDTO>> GetOrderDetails(int orderId)
         {
             if (orderId <= 0)
@@ -58,7 +69,25 @@ namespace Order.API.Controllers
             return orderDetails != null ? Ok(orderDetails) : NotFound("Order not found");
         }
 
+        [HttpGet("user-order")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        public async Task<ActionResult<IEnumerable<OrderDTO>>> GetUserOrders()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("Invalid Token");
+
+            var orders = await orderService.GetOrdersByUserIdAsync(Guid.Parse(userId));
+
+            return orders.Any() ? Ok(orders) : NotFound("No orders found for the user");
+        }
+
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Response>> CreateOrder(OrderDTO orderDTO)
         {
             // check if the model is valid
@@ -70,11 +99,13 @@ namespace Order.API.Controllers
             // convert the DTO to entity
             var order = OrderConversion.ToEntity(orderDTO);
             var response = await orderInterface.CreateAsync(order);
-            return response.Status ? Ok(response) : BadRequest(response);
+            return response.Status ? Ok(response.Message) : BadRequest(response.Message);
 
         }
 
         [HttpPut]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Response>> UpdateOrder(OrderDTO orderDTO)
         {
             // check if the model is valid
@@ -85,10 +116,12 @@ namespace Order.API.Controllers
             // convert the DTO to entity
             var order = OrderConversion.ToEntity(orderDTO);
             var response = await orderInterface.UpdateAsync(order);
-            return response.Status ? Ok(response) : BadRequest(response);
+            return response.Status ? Ok(response.Message) : BadRequest(response.Message);
         }
 
         [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<Response>> DeleteOrder(OrderDTO orderDTO)
         {
             // check if the model is valid
@@ -99,7 +132,7 @@ namespace Order.API.Controllers
             // convert the DTO to entity
             var order = OrderConversion.ToEntity(orderDTO);
             var response = await orderInterface.DeleteAsync(order);
-            return response.Status ? Ok(response) : BadRequest(response);
+            return response.Status ? Ok(response.Message) : BadRequest(response.Message);
         }
     }
 }

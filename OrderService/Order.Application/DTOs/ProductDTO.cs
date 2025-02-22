@@ -14,5 +14,8 @@ namespace Order.Application.DTOs
 
         [Required, Range(1, int.MaxValue)]
         public int StockQuantity { get; set; }
+
+        [Required]
+        public decimal TotalPrice => Price * StockQuantity;
     }
 }

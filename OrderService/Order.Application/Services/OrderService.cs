@@ -12,19 +12,16 @@ namespace Order.Application.Services
     {
 
         // Get Product
-        public async Task<ProductDTO> GetProductAsync(int productId)
+        private async Task<List<ProductDTO>?> GetProductAsync(List<int> productIds)
         {
-            // Call product API using HttpClient
-            var getProduct = await httpClient.GetAsync($"api/product/{productId}");
-            if (!getProduct.IsSuccessStatusCode)
-                return null!;
-
-            var product = await getProduct.Content.ReadFromJsonAsync<ProductDTO>();
-            return product!;
+            var response = await httpClient.PostAsJsonAsync("api/product/batch", productIds);
+            return response.IsSuccessStatusCode
+                ? await response.Content.ReadFromJsonAsync<List<ProductDTO>>()
+                : new List<ProductDTO>();
         }
 
         // Get User
-        public async Task<UserDTO> GetUserAsync(Guid userId, string token)
+        private async Task<UserDTO> GetUserAsync(Guid userId, string token)
         {
             // Set the Authorization header with Bearer Token
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
@@ -40,39 +37,48 @@ namespace Order.Application.Services
         // Get Order Details by Id
         public async Task<OrderDetailsDTO> GetOrderDetailsAsync(int orderId, string JWTToken)
         {
-            // prepare order
+            // Prepare order
             var order = await orderInterface.GetByIdAsync(orderId);
-            if(order is null || order.OrderId <= 0)
+            if (order is null || order.OrderId <= 0)
                 return null!;
 
-            // Get retry pipline
+            // Get retry pipeline
             var retryPipeline = resiliencePipeline.GetPipeline("my-retry-pipeline");
 
-            // prepare product
-            var productDTO = await retryPipeline.ExecuteAsync(async token => await GetProductAsync(order.ProductId));
-
-            // prepare user
+            // Prepare user details
             var userDTO = await retryPipeline.ExecuteAsync(async token => await GetUserAsync(order.UserId, JWTToken));
 
-            // populate order details
+            // Get product IDs from order items
+            var productIds = order.OrderItems.Select(item => item.ProductId).ToList();
+
+            // Fetch product details in one request
+            var products = await retryPipeline.ExecuteAsync(async token => await GetProductAsync(productIds));
+
+            // Map products to order details
+            var productDetails = order.OrderItems.Select(item =>
+            {
+                var productDTO = products!.FirstOrDefault(p => p.ProductId == item.ProductId);
+                return new ProductDTO
+                {
+                    ProductId = item.ProductId,
+                    Name = productDTO?.Name ?? "Unknown",
+                    Price = productDTO?.Price ?? 0,
+                    StockQuantity = item.Quantity
+                };
+            }).ToList();
+
+            // Populate order details
             var orderDetails = new OrderDetailsDTO
             {
                 OrderId = order.OrderId,
-                ProductId = order.ProductId,
-                UserId = order.UserId,
-                Name = userDTO.Name,
-                Email = userDTO.Email,
-                Address = userDTO.Address,
-                MobileNumber = userDTO.MobileNumber,
-                ProductName = productDTO.Name,
-                UnitPrice = productDTO.Price,
-                TotalPrice = productDTO.Price * order.Quantity,
-                Quantity = order.Quantity,
-                CreatedDate = order.CreatedDate
+                User = userDTO,
+                CreatedDate = order.CreatedDate,
+                Products = productDetails,
             };
 
             return orderDetails;
         }
+
 
         // Get Orders by User Id
         public async Task<IEnumerable<OrderDTO>> GetOrdersByUserIdAsync(Guid userId)

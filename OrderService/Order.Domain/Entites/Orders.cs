@@ -8,9 +8,11 @@ namespace Order.Domain.Entites
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderId { get; set; }
-        public int ProductId { get; set; }
+
         public Guid UserId { get; set; }
-        public int Quantity { get; set; }
+
         public DateTime CreatedDate { get; set; } = DateTime.Now;
+
+        public List<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
     }
 }
