@@ -5,6 +5,38 @@
     {
       "AbsoluteMoniker": "D:0:0:{05B4568D-511E-4F3E-1881-F4A770AAFBAE}|Product.API\\Product.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05B4568D-511E-4F3E-1881-F4A770AAFBAE}|Product.API\\Product.API.csproj|solutionrelative:product.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFCFD9C7-0499-5B4F-515C-1B43F17CBF40}|Product.Infrastructure\\Product.Infrastructure.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.infrastructure\\dependencyinjection\\swaggerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFCFD9C7-0499-5B4F-515C-1B43F17CBF40}|Product.Infrastructure\\Product.Infrastructure.csproj|solutionrelative:product.infrastructure\\dependencyinjection\\swaggerconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFCFD9C7-0499-5B4F-515C-1B43F17CBF40}|Product.Infrastructure\\Product.Infrastructure.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.infrastructure\\dependencyinjection\\servicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFCFD9C7-0499-5B4F-515C-1B43F17CBF40}|Product.Infrastructure\\Product.Infrastructure.csproj|solutionrelative:product.infrastructure\\dependencyinjection\\servicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{236C2F40-1EE2-A73A-B95A-A7ED62947B98}|Product.Application\\Product.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.application\\dependencyinjection\\servicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{236C2F40-1EE2-A73A-B95A-A7ED62947B98}|Product.Application\\Product.Application.csproj|solutionrelative:product.application\\dependencyinjection\\servicecontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B4568D-511E-4F3E-1881-F4A770AAFBAE}|Product.API\\Product.API.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B4568D-511E-4F3E-1881-F4A770AAFBAE}|Product.API\\Product.API.csproj|solutionrelative:product.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{236C2F40-1EE2-A73A-B95A-A7ED62947B98}|Product.Application\\Product.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{236C2F40-1EE2-A73A-B95A-A7ED62947B98}|Product.Application\\Product.Application.csproj|solutionrelative:product.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{236C2F40-1EE2-A73A-B95A-A7ED62947B98}|Product.Application\\Product.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.application\\interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{236C2F40-1EE2-A73A-B95A-A7ED62947B98}|Product.Application\\Product.Application.csproj|solutionrelative:product.application\\interfaces\\iproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FFCFD9C7-0499-5B4F-515C-1B43F17CBF40}|Product.Infrastructure\\Product.Infrastructure.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FFCFD9C7-0499-5B4F-515C-1B43F17CBF40}|Product.Infrastructure\\Product.Infrastructure.csproj|solutionrelative:product.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{236C2F40-1EE2-A73A-B95A-A7ED62947B98}|Product.Application\\Product.Application.csproj|c:\\users\\ntc\\desktop\\e-commerce\\productservice\\product.application\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{236C2F40-1EE2-A73A-B95A-A7ED62947B98}|Product.Application\\Product.Application.csproj|solutionrelative:product.application\\services\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +46,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 14,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceContainer.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Infrastructure\\DependencyInjection\\ServiceContainer.cs",
+              "RelativeDocumentMoniker": "Product.Infrastructure\\DependencyInjection\\ServiceContainer.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Infrastructure\\DependencyInjection\\ServiceContainer.cs",
+              "RelativeToolTip": "Product.Infrastructure\\DependencyInjection\\ServiceContainer.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAywBYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T17:44:46.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SwaggerConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Infrastructure\\DependencyInjection\\SwaggerConfiguration.cs",
+              "RelativeDocumentMoniker": "Product.Infrastructure\\DependencyInjection\\SwaggerConfiguration.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Infrastructure\\DependencyInjection\\SwaggerConfiguration.cs",
+              "RelativeToolTip": "Product.Infrastructure\\DependencyInjection\\SwaggerConfiguration.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwCUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T17:39:47.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServiceContainer.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Application\\DependencyInjection\\ServiceContainer.cs",
+              "RelativeDocumentMoniker": "Product.Application\\DependencyInjection\\ServiceContainer.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Application\\DependencyInjection\\ServiceContainer.cs",
+              "RelativeToolTip": "Product.Application\\DependencyInjection\\ServiceContainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T17:30:09.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Product.Infrastructure\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Product.Infrastructure\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:51:27.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IProduct.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Application\\Interfaces\\IProduct.cs",
+              "RelativeDocumentMoniker": "Product.Application\\Interfaces\\IProduct.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Application\\Interfaces\\IProduct.cs",
+              "RelativeToolTip": "Product.Application\\Interfaces\\IProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:50:33.246Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -42,13 +139,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Product.Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "Product.Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:49:10.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Application\\Services\\IProductService.cs",
+              "RelativeDocumentMoniker": "Product.Application\\Services\\IProductService.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.Application\\Services\\IProductService.cs",
+              "RelativeToolTip": "Product.Application\\Services\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:43:20.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.API\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Product.API\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.API\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Product.API\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T16:42:35.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.API\\Program.cs",
               "RelativeDocumentMoniker": "Product.API\\Program.cs",
               "ToolTip": "C:\\Users\\NTC\\Desktop\\E-Commerce\\ProductService\\Product.API\\Program.cs",
               "RelativeToolTip": "Product.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-17T17:02:21.813Z",
               "EditorCaption": ""

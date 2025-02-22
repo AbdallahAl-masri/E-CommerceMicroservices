@@ -3,13 +3,14 @@ using Microsoft.AspNetCore.Mvc;
 using Product.Application.DTOs;
 using Product.Application.DTOs.Conversions;
 using Product.Application.Interfaces;
+using Product.Application.Services;
 
 namespace Product.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     [AllowAnonymous]
-    public class ProductController(IProduct _product) : ControllerBase
+    public class ProductController(IProduct _product, IProductService productService) : ControllerBase
     {
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -19,7 +20,7 @@ namespace Product.API.Controllers
             // get all products
             var products = await _product.GetAllAsync();
 
-            if(!products.Any())
+            if (!products.Any())
             {
                 return NotFound("No products are found");
             }
@@ -50,7 +51,7 @@ namespace Product.API.Controllers
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [Authorize(Roles ="Admin")]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<ProductDTO>> Create(ProductDTO productDTO)
         {
             // check if the model is valid
@@ -91,6 +92,18 @@ namespace Product.API.Controllers
             var getEntity = product.ToEntity();
             var response = await _product.DeleteAsync(getEntity);
             return response.Status ? NoContent() : BadRequest(response.Message);
+        }
+
+        [HttpPost("batch")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<List<ProductDTO>>> GetProductsByIds([FromBody] List<int> productIds)
+        {
+            if (productIds == null || !productIds.Any())
+                return BadRequest("Product ID list cannot be empty.");
+
+            var products = await productService.GetProductsByIdsAsync(productIds);
+            return products.Any() ? Ok(products) : NotFound("No products found for the given IDs.");
         }
     }
 }

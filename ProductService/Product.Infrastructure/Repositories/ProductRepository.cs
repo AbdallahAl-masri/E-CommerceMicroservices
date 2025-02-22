@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Product.Application.DTOs;
 using Product.Application.Interfaces;
 using Product.Domain.Entities;
 using Product.Infrastructure.Data;
@@ -79,7 +80,7 @@ namespace Product.Infrastructure.Repositories
             try
             {
                 var product = await context.Products.FindAsync(id);
-                return product is not null? product : null!;
+                return product is not null ? product : null!;
             }
             catch (Exception ex)
             {
@@ -116,6 +117,22 @@ namespace Product.Infrastructure.Repositories
                 LogException.LogExceptions(ex);
                 return new Response { Status = false, Message = "Error occurred adding new product" };
             }
+        }
+
+        public async Task<List<ProductDTO>> GetProductsByIdsAsync(List<int> productIds)
+        {
+            var products = await context.Products
+            .Where(p => productIds.Contains(p.ProductId))
+            .Select(p => new ProductDTO
+            {
+                ProductId = p.ProductId,
+                Name = p.Name,
+                Price = p.Price,
+                StockQuantity = p.StockQuantity
+            })
+            .ToListAsync();
+
+            return products;
         }
     }
 }

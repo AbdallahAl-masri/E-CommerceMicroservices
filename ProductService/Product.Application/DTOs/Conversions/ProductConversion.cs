@@ -7,7 +7,7 @@ namespace Product.Application.DTOs.Conversions
         public static (ProductDTO?, IEnumerable<ProductDTO>?) ToDTO(Products product, IEnumerable<Products> products)
         {
             // return single
-            if(product is not null || products is null)
+            if (product is not null || products is null)
             {
                 return (
                     new ProductDTO
@@ -20,7 +20,7 @@ namespace Product.Application.DTOs.Conversions
             }
 
             // return list
-            if(product is null || products is not null)
+            if (product is null || products is not null)
             {
                 return (null, products.Select(p => new ProductDTO
                 {

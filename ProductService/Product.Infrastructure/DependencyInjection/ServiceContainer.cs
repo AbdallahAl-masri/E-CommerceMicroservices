@@ -19,6 +19,9 @@ namespace Product.Infrastructure.DependencyInjection
 
             // Add Repositories
             services.AddScoped<IProduct, ProductRepository>();
+
+            // Add Swagger Documentation
+            services.AddSwaggerDocumentation();
             return services;
         }
 
