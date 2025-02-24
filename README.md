@@ -28,7 +28,7 @@ Each microservice has a Swagger UI:
 ### 🔹 Postman Collection
 
 Import the Postman collection to test APIs:  
-[Download Postman Collection](./ecommerce-api.postman_collection.json)
+[Download Postman Collection](./eCommerce-api.postman_collection.json)
 
 ## Services
 
