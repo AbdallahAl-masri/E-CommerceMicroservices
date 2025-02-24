@@ -17,7 +17,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseInfrastructureService();
-app.UseAuthorization();
 app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 app.Run();

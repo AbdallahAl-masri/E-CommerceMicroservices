@@ -67,6 +67,8 @@ namespace Order.Application.Services
                 };
             }).ToList();
 
+            var totalAmount = productDetails.Sum(p => p.TotalPrice);
+
             // Populate order details
             var orderDetails = new OrderDetailsDTO
             {
@@ -74,24 +76,10 @@ namespace Order.Application.Services
                 User = userDTO,
                 CreatedDate = order.CreatedDate,
                 Products = productDetails,
+                TotalAmount = totalAmount
             };
 
             return orderDetails;
-        }
-
-
-        // Get Orders by User Id
-        public async Task<IEnumerable<OrderDTO>> GetOrdersByUserIdAsync(Guid userId)
-        {
-            // Get orders by user id
-            var orders = await orderInterface.GetOrdersAsync(o => o.UserId == userId);
-            if(!orders.Any())
-                return null!;
-
-            // convert from entity to DTO
-            var (_, _ordersDTO) = OrderConversion.ToDTO(null!, orders);
-
-            return _ordersDTO!;
         }
     }
 }

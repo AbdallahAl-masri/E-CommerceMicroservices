@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Order.Application.Interfaces;
 using Order.Infrastructure.Data;
 using Order.Infrastructure.Repositories;
+using Product.Infrastructure.DependencyInjection;
 using SharedLibrary.DependencyInjection;
 
 namespace Order.Infrastructure.DependencyInjection
@@ -18,6 +19,10 @@ namespace Order.Infrastructure.DependencyInjection
 
             // Add Dependency Injection
             services.AddScoped<IOrder, OrderRepository>();
+
+            // Add Swagger Documentation
+            services.AddSwaggerDocumentation();
+
             return services;
         }
 

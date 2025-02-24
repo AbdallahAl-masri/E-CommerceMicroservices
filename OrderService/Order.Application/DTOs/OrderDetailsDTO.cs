@@ -15,5 +15,7 @@ namespace Order.Application.DTOs
 
         [Required]
         public List<ProductDTO> Products { get; set; } = new List<ProductDTO>();
+
+        public decimal TotalAmount { get; set; }
     }
 }

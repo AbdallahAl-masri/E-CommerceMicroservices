@@ -19,10 +19,23 @@ namespace Order.Infrastructure.Repositories
         {
             try
             {
-                var order = context.Orders.Add(entity).Entity;
+                // Prevent saving orders with no items
+                if (entity.OrderItems == null || !entity.OrderItems.Any())
+                {
+                    return new Response { Status = false, Message = "Order must contain at least one product." };
+                }
+                var order = new Orders
+                {
+                    UserId = entity.UserId,
+                    CreatedDate = DateTime.Now,
+                    OrderItems = entity.OrderItems
+                };
+
                 await context.SaveChangesAsync();
-                return order.OrderId > 0 ? new Response { Status = true, Message = "Order placed successfully" } :
-                    new Response { Status = false, Message = "Error occurred while placing order" };
+
+                return new Response { Status = order.OrderId > 0, 
+                    Message = order.OrderId > 0 ? 
+                    "Order placed successfully" : "Error occured while placing order" };
             }
             catch (Exception ex)
             {
@@ -36,7 +49,7 @@ namespace Order.Infrastructure.Repositories
 
         public async Task<Response> DeleteAsync(Orders entity)
         {
-            try 
+            try
             {
                 var order = await GetByIdAsync(entity.OrderId);
                 if (order is null)
@@ -56,12 +69,12 @@ namespace Order.Infrastructure.Repositories
             }
         }
 
-        public async Task<Orders> FindByAsync(Expression<Func<Orders, bool>> predicate)
+        public async Task<IEnumerable<Orders>> FindByAsync(Expression<Func<Orders, bool>> predicate)
         {
             try
             {
-                var order = await context.Orders.Where(predicate).FirstOrDefaultAsync();
-                return order is not null ? order : null!;
+                var order = await context.Orders.Where(predicate).Include(o => o.OrderItems).ToListAsync();
+                return order.Any() ? order : null!;
             }
             catch (Exception ex)
             {
@@ -76,7 +89,7 @@ namespace Order.Infrastructure.Repositories
         {
             try
             {
-                var orders = await context.Orders.AsNoTracking().ToListAsync();
+                var orders = await context.Orders.AsNoTracking().Include(o => o.OrderItems).ToListAsync();
                 return orders is not null ? orders : null!;
             }
             catch (Exception ex)
@@ -90,20 +103,21 @@ namespace Order.Infrastructure.Repositories
 
         public async Task<Orders> GetByIdAsync(int id)
         {
-            
             try
             {
-                var order = await context.Orders.FindAsync(id);
-                return order is not null ? order : null!;
+                var order = await context.Orders
+                    .Include(o => o.OrderItems)
+                    .FirstOrDefaultAsync(o => o.OrderId == id);
+
+                return order ?? null!;
             }
             catch (Exception ex)
             {
-                // log Exception
                 LogException.LogExceptions(ex);
-
-                throw new Exception("Error occurred while fetching order");
+                throw new Exception("Error occurred while fetching order", ex);
             }
         }
+
 
         public async Task<IEnumerable<Orders>> GetOrdersAsync(Expression<Func<Orders, bool>> predicate)
         {
@@ -126,11 +140,43 @@ namespace Order.Infrastructure.Repositories
             try
             {
                 var order = await GetByIdAsync(entity.OrderId);
+
                 if (order is null)
                     return new Response { Status = false, Message = "Order not found" };
 
-                context.Entry(order).State = EntityState.Detached;
-                context.Orders.Update(entity);
+                context.Entry(order).CurrentValues.SetValues(entity);
+
+                // Ensure CreatedDate is not updated unless necessary
+                order.CreatedDate = entity.CreatedDate;
+
+                // Remove OrderItems that are no longer in the updated order
+                var itemsToRemove = order.OrderItems
+                    .Where(existingItem => !entity.OrderItems.Any(updatedItem => updatedItem.OrderItemId == existingItem.OrderItemId))
+                    .ToList();
+
+                context.OrderItems.RemoveRange(itemsToRemove);
+
+                // Add or Update OrderItems
+                foreach (var updatedItem in entity.OrderItems)
+                {
+                    var existingItem = order.OrderItems.FirstOrDefault(item => item.OrderItemId == updatedItem.OrderItemId);
+
+                    if (existingItem is null)
+                    {
+                        // New OrderItem
+                        updatedItem.OrderId = order.OrderId; // Ensure FK is set
+                        context.OrderItems.Add(updatedItem);
+                    }
+                    else
+                    {
+                        // Existing OrderItem - Update if values changed
+                        if (existingItem.ProductId != updatedItem.ProductId || existingItem.Quantity != updatedItem.Quantity)
+                        {
+                            context.Entry(existingItem).CurrentValues.SetValues(updatedItem);
+                        }
+                    }
+                }
+
                 await context.SaveChangesAsync();
                 return new Response { Status = true, Message = "Order updated successfully" };
             }

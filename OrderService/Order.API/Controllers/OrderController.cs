@@ -40,18 +40,6 @@ namespace Order.API.Controllers
             return dto != null ? Ok(dto) : NotFound("Order not found");
         }
 
-        [HttpGet("client/{clientId}")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<OrderDTO>> GetClientOrders(Guid clientId)
-        {
-            if (clientId == Guid.Empty)
-                return BadRequest("Invalid client id");
-            var orders = await orderInterface.GetOrdersAsync(o => o.UserId == clientId);
-            return orders.Any() ? Ok(orders) : NotFound("No orders found for the client");
-        }
-
         [HttpGet("details/{orderId}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -80,14 +68,17 @@ namespace Order.API.Controllers
             if (string.IsNullOrEmpty(userId))
                 return Unauthorized("Invalid Token");
 
-            var orders = await orderService.GetOrdersByUserIdAsync(Guid.Parse(userId));
+            var orders = await orderInterface.FindByAsync(o => o.UserId == Guid.Parse(userId));
 
-            return orders.Any() ? Ok(orders) : NotFound("No orders found for the user");
+            var (_, list) = OrderConversion.ToDTO(null!, orders);
+
+            return list!.Any() ? Ok(list) : NotFound("No orders found for the user");
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<Response>> CreateOrder(OrderDTO orderDTO)
         {
             // check if the model is valid
@@ -96,8 +87,13 @@ namespace Order.API.Controllers
                 return BadRequest("Incomplete data submitted");
             }
 
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("Invalid Token");
+
             // convert the DTO to entity
-            var order = OrderConversion.ToEntity(orderDTO);
+            var order = OrderConversion.ToEntity(orderDTO, Guid.Parse(userId));
             var response = await orderInterface.CreateAsync(order);
             return response.Status ? Ok(response.Message) : BadRequest(response.Message);
 
@@ -106,6 +102,7 @@ namespace Order.API.Controllers
         [HttpPut]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<Response>> UpdateOrder(OrderDTO orderDTO)
         {
             // check if the model is valid
@@ -113,8 +110,14 @@ namespace Order.API.Controllers
             {
                 return BadRequest("Incomplete data submitted");
             }
+
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("Invalid Token");
+
             // convert the DTO to entity
-            var order = OrderConversion.ToEntity(orderDTO);
+            var order = OrderConversion.ToEntity(orderDTO, Guid.Parse(userId));
             var response = await orderInterface.UpdateAsync(order);
             return response.Status ? Ok(response.Message) : BadRequest(response.Message);
         }
@@ -122,6 +125,7 @@ namespace Order.API.Controllers
         [HttpDelete]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<Response>> DeleteOrder(OrderDTO orderDTO)
         {
             // check if the model is valid
@@ -129,8 +133,14 @@ namespace Order.API.Controllers
             {
                 return BadRequest("Incomplete data submitted");
             }
+
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (string.IsNullOrEmpty(userId))
+                return Unauthorized("Invalid Token");
+
             // convert the DTO to entity
-            var order = OrderConversion.ToEntity(orderDTO);
+            var order = OrderConversion.ToEntity(orderDTO, Guid.Parse(userId));
             var response = await orderInterface.DeleteAsync(order);
             return response.Status ? Ok(response.Message) : BadRequest(response.Message);
         }

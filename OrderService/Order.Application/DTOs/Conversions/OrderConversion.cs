@@ -13,7 +13,6 @@ namespace Order.Application.DTOs.Conversions
                     new OrderDTO
                     {
                         OrderId = order!.OrderId,
-                        UserId = order!.UserId,
                         CreatedDate = order!.CreatedDate,
                         Products = order!.OrderItems.Select(oi => new OrderItemDTO
                         {
@@ -33,7 +32,6 @@ namespace Order.Application.DTOs.Conversions
                     orders.Select(o => new OrderDTO
                     {
                         OrderId = o.OrderId,
-                        UserId = o.UserId,
                         CreatedDate = o.CreatedDate,
                         Products = o.OrderItems.Select(oi => new OrderItemDTO
                         {
@@ -48,14 +46,15 @@ namespace Order.Application.DTOs.Conversions
         }
 
 
-        public static Orders ToEntity(this OrderDTO orderDTO)
+        public static Orders ToEntity(this OrderDTO orderDTO, Guid userId)
         {
             return new Orders
             {
-                UserId = orderDTO.UserId,
+                UserId = userId,
                 CreatedDate = orderDTO.CreatedDate,
                 OrderItems = orderDTO.Products.Select(p => new OrderItem
                 {
+                    OrderId = orderDTO.OrderId,
                     ProductId = p.ProductId,
                     Quantity = p.Quantity,
                 }).ToList()

@@ -4,7 +4,6 @@ namespace Order.Application.DTOs
 {
     public class UserDTO
     {
-        public Guid UserId { get; set; }
 
         [Required]
         public string Name { get; set; }
