@@ -12,7 +12,7 @@ namespace SharedLibrary.DependencyInjection
         {
             //add JWT Authentication
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer("Bearer", o=>
+                .AddJwtBearer("Bearer", o =>
                 {
                     var key = Encoding.ASCII.GetBytes(configuration.GetSection("Authentication:Key").Value!);
                     string issuer = configuration.GetSection("Authentication:Issuer").Value!;

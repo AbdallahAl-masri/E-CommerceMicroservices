@@ -7,10 +7,10 @@ namespace SharedLibrary.Intefaces
     {
         Task<IEnumerable<T>> GetAllAsync();
         Task<T> GetByIdAsync(int id);
-        Task<T> FindByAsync(Expression<Func<T, bool>> predicate);
+        Task<IEnumerable<T>> FindByAsync(Expression<Func<T, bool>> predicate);
         Task<Response> CreateAsync(T entity);
         Task<Response> UpdateAsync(T entity);
         Task<Response> DeleteAsync(T entity);
-        
+
     }
 }
